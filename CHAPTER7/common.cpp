@@ -7,8 +7,9 @@
 #include <iostream>
 #include "common.h"
 #include <cstdlib>
+#include <cmath>
 //填充数字到数据中
-int 	fill_array(double Array[],const int Number)
+int 	fill_array(double Array[],const unsigned int Number)
 {
 	using namespace std;
 	int i;
@@ -37,4 +38,34 @@ int 	fill_array(double Array[],const int Number)
 		return EXIT_FAILURE; 
 	}
 	return EXIT_SUCCESS;
+}
+
+int show_array(const double Array[],const unsigned int Number)
+{
+	using namespace std;
+	if(NULL == Array)
+	{
+		return EXIT_FAILURE;
+	}
+	int i;
+	for(i = 0;i < Number;i++)
+	{
+		cout << Array[i] << " ";
+	}
+	return EXIT_SUCCESS;
+}
+double average(const double Array[],const unsigned int Number)
+{
+	return (sum(Array,Number) / Number);		
+}
+double sum(const double Array[],const unsigned int Number)
+{
+	using namespace std;
+	int i;
+	double temp = 0;
+	for(i = 0; i < Number; i++)
+	{
+		temp = temp + Array[i];
+	}
+	return temp;
 }

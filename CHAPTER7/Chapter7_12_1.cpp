@@ -5,11 +5,10 @@
     > Created Time: Sun 28 Aug 2016 05:20:32 PM CST
  ************************************************************************/
 #include <iostream>
-#include <cstdlib>
 #include "common.h"
 #define MAX_NUMBER 2 //求调和平均数的个数
 //求number个数字的的调和平均数
-double	calculate(const double Array[],const int Number); 
+static double calculate(const double Array[],const unsigned int Number); 
 
 int main(void)
 {
@@ -23,7 +22,7 @@ int main(void)
 	return EXIT_SUCCESS;
 }
 
-double	calculate(const double Array[],const int Number)
+static double calculate(const double Array[],const unsigned int Number)
 {
 	double 	temp = 0;
 	int 	i;

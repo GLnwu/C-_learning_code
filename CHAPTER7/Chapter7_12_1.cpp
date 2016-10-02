@@ -6,11 +6,10 @@
  ************************************************************************/
 #include <iostream>
 #include <cstdlib>
+#include "common.h"
 #define MAX_NUMBER 2 //求调和平均数的个数
 //求number个数字的的调和平均数
 double	calculate(const double Array[],const int Number); 
-//填充数字到数据中
-int 	fill_array(double Array[],const int Number);
 
 int main(void)
 {
@@ -21,37 +20,6 @@ int main(void)
 	{
 		cout << calculate(Array,MAX_NUMBER) << endl;
 	}	
-	return EXIT_SUCCESS;
-}
-
-int 	fill_array(double Array[],const int Number)
-{
-	using namespace std;
-	int i;
-	double temp;
-	for ( i = 0; i < Number;i++)
-	{
-		cout << "Enter value #" << (i + 1) << ": ";
-		cin >> temp;
-		if(!cin)
-		{
-			cin.clear();
-			while('\n' == cin.get())
-			{
-				continue;
-			}
-			cout << "Bad input: input process terminated.\n";
-			break;
-		}
-		else if(0 == temp){
-		break;
-		}
-		Array[i] = temp;
-	}
-	if(Number != i)
-	{
-		return EXIT_FAILURE; 
-	}
 	return EXIT_SUCCESS;
 }
 

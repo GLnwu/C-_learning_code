@@ -20,8 +20,7 @@ int main(void)
 	{
 		return EXIT_FAILURE;
 	}
-	cout << endl << "Average number is : ";
+	cout << "Average number is : ";
 	cout <<  average(array,MAX_USER) << endl; 
 	return EXIT_SUCCESS;
 }
-

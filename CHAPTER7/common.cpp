@@ -52,6 +52,7 @@ int show_array(const double Array[],const unsigned int Number)
 	{
 		cout << Array[i] << " ";
 	}
+	cout << endl;
 	return EXIT_SUCCESS;
 }
 double average(const double Array[],const unsigned int Number)

@@ -7,6 +7,8 @@
 //模板函数的声明与定义，一般都放在头文件中，隐式实例化模板函数时会用到，具体为啥还不清楚
 #include <iostream>
 #include <cstdlib>
+//获取数组长度
+#define GET_ARRAY_LEN(array,len) {len = (sizeof(array)/sizeof(array[0]));}
 //填充数组内容
 template <typename T>
 int fill_array(T Array[],const unsigned int Number);

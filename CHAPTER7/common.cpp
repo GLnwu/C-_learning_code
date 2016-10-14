@@ -21,7 +21,7 @@ int 	fill_array(double Array[],const unsigned int Number)
 		if(!cin)
 		{
 			cin.clear();
-			while('\n' == cin.get())
+			while('\n' != cin.get())
 			{
 				continue;
 			}

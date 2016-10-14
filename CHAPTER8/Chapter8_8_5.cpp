@@ -6,18 +6,10 @@
  ************************************************************************/
 #include <iostream>
 #include <cstdlib>
-
+#include "common.h"
 //求最大数据元素，并返回最大的数组元素
 template <typename T>
 T max5(T Array[]);
-
-//填充数组内容
-template <typename T>
-int fill_array(T Array[],const unsigned int Number);
-
-//显示数组内容
-template <typename T>
-int show_array(const T Array[],const unsigned int Number);
 
 int main(void)
 {
@@ -54,54 +46,4 @@ T max5(T Array[])
 	return max;
 }
 
-//填充数组内容
-template <typename T>
-int fill_array(T Array[],const unsigned int Number)
-{
-	using namespace std;
-	int i;
-	T temp;
-	for ( i = 0; i < Number;i++)
-	{
-		cout << "Enter value #" << (i + 1) << ": ";
-		cin >> temp;
-		if(!cin)
-		{
-			cin.clear();
-			while('\n' != cin.get())
-			{
-				continue;
-			}
-			cout << "Bad input: input process terminated.\n";
-			break;
-		}
-		else if(0 == temp){
-			break;
-		}
-		Array[i] = temp;
-	}
-	if(Number != i)
-	{
-		return EXIT_FAILURE; 
-	}
-	return EXIT_SUCCESS;
 
-}
-
-//显示数组内容
-template <typename T>
-int show_array(const T Array[],const unsigned int Number)
-{
-	using namespace std;
-	if(NULL == Array)
-	{
-		return EXIT_FAILURE;
-	}
-	int i;
-	for(i = 0;i < Number;i++)
-	{
-		cout << Array[i] << " ";
-	}
-	cout << endl;
-	return EXIT_SUCCESS;
-}

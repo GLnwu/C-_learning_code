@@ -4,10 +4,9 @@
     > Mail: bingtang1021@gmail.com 
     > Created Time: Tue 15 Mar 2016 10:22:30 PM CST
  ************************************************************************/
-//arith.cpp -- some C++ arithmetic
+// arith.cpp -- some C++ arithmetic
 #include<iostream>
-int main()
-{
+int main() {
 	using namespace std;
 	float hats,heads;
 

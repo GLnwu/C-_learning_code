@@ -23,7 +23,7 @@ class Stock {
     explicit Stock(const std::string & co, int64_t n = 0, double pr = 0.0);
     ~Stock();   // noisy destructor
     void buy(int64_t num, double price);
-    void shell(int64_t num, double price);
+    void sell(int64_t num, double price);
     void update(double price);
     void show();
 };

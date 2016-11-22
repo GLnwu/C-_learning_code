@@ -32,7 +32,6 @@ Stock::Stock(const std::string & co, int64_t n, double pr) {
 }
 // class destructor
 Stock::~Stock() {   // verbose class destructor
-  std::cout << "Bye, " << company << "!\n";
 }
 // other methods
 void Stock::buy(int64_t num, double price) {

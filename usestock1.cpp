@@ -26,6 +26,7 @@ int main() {
 
     cout << "Using a constructor to reset an object\n";
     // 为什么初始化Stock2的时候，相同的语法，却没有初始化一个临时对象?
+    // 初始化对象时，构造函数肯能会初始化一个临时对象，也可能不会。
     stock1 = Stock("Niffy Foods", 10, 50.0);  // tenp object
     cout << "Revised stock1:\n";
     stock1.show();

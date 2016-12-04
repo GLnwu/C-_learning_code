@@ -8,3 +8,5 @@ test*
 #忽略测试的C文件
 .DS_Store
 #忽略掉OS X中用于Finder的文件
+README_Problem
+#忽略掉Chapter7下的README_Problem文件，描述了几个test名称的C文件体现的问题.

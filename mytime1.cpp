@@ -4,9 +4,9 @@
     > Mail: bingtang1021@gmail.com 
     > Created Time: Sun 11 Dec 2016 10:43:45 PM CST
  ************************************************************************/
-//implementing Time methods
+// implementing Time methods
 #include <iostream>
-#include "mytime1.h"
+#include "./mytime1.h"
 
 Time::Time() {
   hours = minutes = 0;

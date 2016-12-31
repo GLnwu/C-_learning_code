@@ -7,7 +7,7 @@
 // Stonewt methods
 #include <iostream>
 using std::cout;
-#include "stonewt.h"  // NOLINT
+#include "stonewt1.h"   // NOLINT
 
 // construct Stonewt object from double value
 Stonewt::Stonewt(double lbs) {
@@ -38,4 +38,13 @@ void Stonewt::show_stn() const {
 // show weight in pounds
 void Stonewt::show_lbs() const {
   cout << pounds << " pounds\n";
+}
+
+// conversion functions
+Stonewt::operator int() const {
+  return int (pounds + 0.5);
+}
+
+Stonewt::operator double() const {
+  return pounds;
 }

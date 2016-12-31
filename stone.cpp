@@ -8,7 +8,7 @@
 // compile with stonewt.cpp
 #include <iostream>
 using std::cout;
-#include "stonewt.h"  \\ NOLINT
+#include "stonewt.h"  // NOLINT
 void display(const Stonewt & st, int n);
 int main(void) {
   Stonewt incognito(275);   // uses constructor to niititlalize

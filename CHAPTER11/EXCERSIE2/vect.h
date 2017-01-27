@@ -4,8 +4,8 @@
     > Mail: bingtang1021@gmail.com 
     > Created Time: Wed 14 Dec 2016 10:57:09 PM CST
  ************************************************************************/
-#ifndef VECT_H_
-#define VECT_H_
+#ifndef CHAPTER11_EXCERSIE2_VECT_H_
+#define CHAPTER11_EXCERSIE2_VECT_H_
 #include <iostream>
 namespace VECTOR {
 class Vector {
@@ -41,4 +41,4 @@ class Vector {
     friend std::ostream & operator<<(std::ostream & os, const Vector & v);
 };
 }   // namespace VECTOR
-#endif  // VECT_H_
+#endif  // CHAPTER11_EXCERSIE2_VECT_H_

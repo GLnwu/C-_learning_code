@@ -10,7 +10,7 @@
 #include <cstdint>
 #include <cstdlib>  // rand(), srand(), prototypes
 #include <ctime>    // time()  prototype
-#include "vect.h"
+#include "vect.h"   // NOLINT
 int main(void) {
   using std::cin;
   using std::cout;
@@ -29,8 +29,8 @@ int main(void) {
     if (!(cin >> dstep))
       break;
 
-    while(result.magval() < target) {
-      direction = rand() % 360;
+    while (result.magval() < target) {
+      direction = rand() % 360;   // NOLINT
       step.reset(dstep, direction, Vector::POL);
       result = result + step;
       steps++;
@@ -48,7 +48,7 @@ int main(void) {
   }
   cout << "Bye!\n";
   cin.clear();
-  while('\n' != cin.get())
+  while ('\n' != cin.get())
     continue;
   return 0;
 }

@@ -44,7 +44,7 @@ namespace VECTOR {
       x = n1;
       y = n1;
     } else if (POL == form) {
-      set_x(n1, n2); 
+      set_x(n1, n2);
       set_y(n1, n2);
     } else {
       cout << "Incorrect 3rd argument to Vector() -- ";
@@ -59,7 +59,7 @@ namespace VECTOR {
       x = n1;
       y = n2;
     } else if (POL == form) {
-      set_x(n1, n2); 
+      set_x(n1, n2);
       set_y(n1, n2);
     } else {
       cout << "Incorrect 3rd argument to Vector() -- ";

@@ -6,7 +6,7 @@
  ************************************************************************/
 // methods for Vector class
 #include <cmath>
-#include "vect.h"  //NOLINT include <iostream>
+#include "vect.h"  // NOLINT include <iostream>
 using std::sqrt;
 using std::sin;
 using std::cos;

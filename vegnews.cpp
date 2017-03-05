@@ -8,7 +8,7 @@
 // compile with strngbad.cpp
 #include <iostream>
 using std::cout;
-#include "strngbad.h"
+#include "strngbad.h"   //NOLINT
 
 void callme1(StringBad &);  // pass by reference
 void callme2(StringBad);    // pass by value
@@ -24,9 +24,9 @@ int main() {
     cout << "headline2: " << headline2 << endl;
     cout << "sports: " << sports << endl;
     callme1(headline1);
-    cout << "headline1" << headline1 << endl; 
+    cout << "headline1" << headline1 << endl;
     callme2(headline2);
-    cout << "headline2" << headline2 << endl; 
+    cout << "headline2" << headline2 << endl;
     cout << "Initalize one object to another:\n";
     StringBad sailor = sports;
     cout << "sailor: " << sailor << endl;

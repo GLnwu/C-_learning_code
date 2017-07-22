@@ -25,7 +25,7 @@ class AcctABC {
   const std::string & FullName() const {return fullName;}
   long AcctNum() const {return acctNum;}
   Formatting SetFormat() const;
-  void Restore(Formatting & f) const;
+  void Restore(Formatting & f) const;  // 如不改变该引用的值，则应尽量使用常量引用
  public:
   AcctABC(const std::string & s = "Nullbody", long an = -1,
       double bal = 0.0);

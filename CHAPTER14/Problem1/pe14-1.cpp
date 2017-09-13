@@ -6,7 +6,7 @@
  ************************************************************************/
 // using Wind class containment
 #include <iostream>
-#include "wine.h"
+#include "wine.h" // NOLINT
 int main() {
   using std::cout;
   using std::cin;

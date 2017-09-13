@@ -5,7 +5,7 @@
     > Created Time: Tue 12 Sep 2017 11:34:34 PM CST
  ************************************************************************/
 #include <cassert>
-#include "wine.h"
+#include "wine.h"  // NOLINT
 using std::cout;
 using std::cin;
 using std::endl;
@@ -26,10 +26,10 @@ void Wine::Show() const {
   cout << "Wine :" << label_ << endl;
   cout << "Year    ";
   cout << "Bottles" << endl;
-  for(int i = 0; i < years_; i++) {
+  for (int i = 0; i < years_; i++) {
     cout << years_quantity_.first()[i] << "    ";
     cout << years_quantity_.second()[i] << endl;
-  } 
+  }
 }
 
 int Wine::sum() {

@@ -4,6 +4,8 @@
     > Mail: bingtang1021@gmail.com 
     > Created Time: Mon 11 Sep 2017 10:57:24 PM CST
  ************************************************************************/
+#ifndef CHAPTER14_PROBLEM1_PAIR_H_
+#define CHAPTER14_PROBLEM1_PAIR_H_
 template <class T1, class T2>
 class Pair {
  private:
@@ -27,3 +29,4 @@ template <class T1, class T2>
 T2 & Pair<T1, T2>::second() {
   return b;
 }
+#endif  // CHAPTER14_PROBLEM1_PAIR_H_

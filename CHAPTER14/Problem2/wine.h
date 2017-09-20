@@ -10,7 +10,7 @@
 #include <iostream>
 #include <valarray>
 #include <string>
-#include "pair.h"
+#include "pair.h"   // NOLINT
 typedef std::valarray<int> ArrayInt;
 typedef Pair<ArrayInt, ArrayInt> PairArray;
 class Wine : private std::string, private PairArray {
@@ -28,11 +28,11 @@ class Wine : private std::string, private PairArray {
     : std::string(l), years_(y) {
       ((PairArray &)(*this)).first() = ArrayInt(y);
       ((PairArray &)(*this)).second() = ArrayInt(y);
-  } 
+  }
   Wine() {}
   void GetBottles();
   void Show() const;
   const std::string & Label() const {return (const std::string & )(*this);}
   int sum();
 };
-#endif  // CHAPTER14_PROBLEM1_WINE_H_
+#endif  // CHAPTER14_PROBLEM2_WINE_H_

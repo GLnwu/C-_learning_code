@@ -6,7 +6,7 @@
  ************************************************************************/
 #include <iostream>
 #include <string>
-#include "wine.h"
+#include "wine.h"  // NOLINT
 using std::cout;
 using std::cin;
 using std::endl;

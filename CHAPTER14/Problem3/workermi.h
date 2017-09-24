@@ -63,8 +63,8 @@ class Singer : virtual public Worker {
 // multiple inheritance
 class SingingWaiter :  public Waiter, public Singer{
  protected:
-  void Data() const;
-  void Get();
+  void Data() const {}
+  void Get() {}
  public:
   SingingWaiter() {}
   SingingWaiter(const std::string & s, long n, int p = 0,

@@ -97,24 +97,16 @@ void Singer::Get() {
 }
 
 // Singingwaiter methods
-void SingingWaiter::Data() const {
-  Singer::Data();
-  Singer::Data();
-}
-
-void SingingWaiter::Get() {
-  Waiter::Get();
-  Singer::Get();
-}
-
 void SingingWaiter::Set() {
   cout << "Enter singing waiter's name: ";
   Worker::Get();
-  Get();
+  Waiter::Get();
+  Singer::Get();
 }
 
 void SingingWaiter::Show() const {
   cout << "Category: singing waiter\n";
   Worker::Data();
-  Data();
+  Singer::Data();
+  Waiter::Data();
 }

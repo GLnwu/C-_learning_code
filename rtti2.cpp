@@ -16,7 +16,7 @@ class Grand {
  private:
   int hold;
  public:
-  Grand(int h = 0) : hold(h) {}
+  explicit Grand(int h = 0) : hold(h) {}
   virtual void Speak() const {cout << "I am a grand class!\n";}
   virtual int Value() const {return hold;}
   virtual ~Grand() {}
@@ -24,7 +24,7 @@ class Grand {
 
 class Superb : public Grand {
  public:
-  Superb(int h = 0) : Grand(h) {}
+  explicit Superb(int h = 0) : Grand(h) {}
   void Speak() const {cout << "I am a superb class!!\n";}
   virtual void Say() const {
     cout << "I hold the superb value of " << Value() << "!\n";
@@ -35,10 +35,11 @@ class Magnificent : public Superb {
  private:
   char ch;
  public:
-  Magnificent(int h = 0, char cv = 'A') : Superb(h), ch(cv) {}
+  explicit Magnificent(int h = 0, char cv = 'A') : Superb(h), ch(cv) {}
   void Speak() const { cout << "I am a magnificent class!\n"; }
   void Say() const {
-    cout << "I hold the character " << ch << " and the integer " << Value() << "!\n";
+    cout << "I hold the character " << ch <<
+      " and the integer " << Value() << "!\n";
   }
 };
 
